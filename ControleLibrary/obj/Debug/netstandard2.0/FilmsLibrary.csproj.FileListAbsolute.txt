@@ -11,3 +11,16 @@ C:\Users\adai07\Desktop\Controle_EIBEL_Quentin\ControleLibrary\obj\Debug\netstan
 C:\Users\adai07\Desktop\Controle_EIBEL_Quentin\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.csproj.CopyComplete
 C:\Users\adai07\Desktop\Controle_EIBEL_Quentin\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.dll
 C:\Users\adai07\Desktop\Controle_EIBEL_Quentin\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.pdb
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\bin\Debug\netstandard2.0\FilmsLibrary.deps.json
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\bin\Debug\netstandard2.0\FilmsLibrary.dll
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\bin\Debug\netstandard2.0\FilmsLibrary.pdb
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\bin\Debug\netstandard2.0\MySql.Data.dll
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\bin\Debug\netstandard2.0\MySql.Data.Entity.dll
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\bin\Debug\netstandard2.0\MySql.Web.dll
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.csprojAssemblyReference.cache
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.AssemblyInfoInputs.cache
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.AssemblyInfo.cs
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.csproj.CopyComplete
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.dll
+C:\Users\adai07\Documents\ControleFilmShop\ControleLibrary\obj\Debug\netstandard2.0\FilmsLibrary.pdb
