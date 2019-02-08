@@ -38,7 +38,6 @@ namespace FilmsLibrary
         }
         #endregion
 
-
         //Fonctions Ajouter
         #region [BDD] Ajouter une personne
         public static void AddPersonnes(Personnes x)
@@ -66,8 +65,9 @@ namespace FilmsLibrary
                 firstInsert.Parameters.Add(tailleParameter);
                 firstInsert.Parameters.Add(poidsParameter);
                 firstInsert.ExecuteNonQuery();
-            }
 
+
+            }
         }
         #endregion
 
