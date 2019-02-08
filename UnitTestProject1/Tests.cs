@@ -23,5 +23,86 @@ namespace UnitTestProject1
             Assert.AreEqual(false, result);
         }
         #endregion
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Nom_Est_Bon()
+        {
+            var personne = new Personnes();
+            personne.Nom = "test";
+
+            Assert.AreEqual("test", personne.Nom);
+        }
+
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Prenom_Est_Bon()
+        {
+            var personne = new Personnes();
+            personne.Prenom = "test";
+
+            Assert.AreEqual("test", personne.Prenom);
+        }
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Ville_Est_Bon()
+        {
+            var personne = new Personnes();
+            personne.Ville = "test";
+
+            Assert.AreEqual("TEST", personne.Ville);
+        }
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Adresse_Est_Bon()
+        {
+            var personne = new Personnes();
+            personne.Adresse = "test";
+
+            Assert.AreEqual("test", personne.Adresse);
+        }
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Titre_Est_Bon()
+        {
+            var film = new Films();
+            film.Titre_film = "test";
+
+            Assert.AreEqual("test", film.Titre_film);
+        }
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Resume_Est_Bon()
+        {
+            var film = new Films();
+            film.Resume_film = "test";
+
+            Assert.AreEqual("test", film.Resume_film);
+        }
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_Genre_Est_Bon()
+        {
+            var film = new Films();
+            film.Genre_film = "test";
+
+            Assert.AreEqual("test", film.Genre_film);
+        }
+
+        //Vérifie quand c'est bon
+        [TestMethod]
+        public void Verifie_Si_CodePostal_Est_Bon()
+        {
+            var personne = new Personnes();
+            personne.CodePostal = "67230";
+
+            Assert.AreEqual("67230", personne.CodePostal);
+        }
     }
 }

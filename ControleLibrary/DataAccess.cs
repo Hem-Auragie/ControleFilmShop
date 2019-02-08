@@ -167,8 +167,9 @@ namespace FilmsLibrary
                 db.Open();
                 MySqlCommand firstInsert = new MySqlCommand("SELECT * FROM films WHERE ID_Film = @id)", db);
                 firstInsert.Parameters.AddWithValue("@id", ID);
-                MySqlDataReader reader = firstInsert.ExecuteReader();
                 firstInsert.ExecuteNonQuery();
+                MySqlDataReader reader = firstInsert.ExecuteReader();
+                
             }
         }
         #endregion

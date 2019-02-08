@@ -30,12 +30,72 @@ namespace FilmsLibrary
             Liste_acteur = liste_acteur;
         }
 
-        public string Titre_film { get => titre_film; set => titre_film = value; }
-        public string Realisateur_film { get => realisateur_film; set => realisateur_film = value; }
+        public string Titre_film
+        {
+            get => titre_film;
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("ERREUR: Le titre n'est pas valide");
+                }
+                else
+                {
+                    titre_film = value;
+                }
+            }
+        }
+        public string Realisateur_film
+        {
+            get => realisateur_film;
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("ERREUR: Le réalisateur n'est pas valide");
+                }
+                else
+                {
+                    realisateur_film = value;
+                }
+            }
+        }
         public DateTime Date_sortie_film { get => date_sortie_film; set => date_sortie_film = value; }
-        public string Resume_film { get => resume_film; set => resume_film = value; }
-        public string Genre_film { get => genre_film; set => genre_film = value; }
-        public int Duree_film { get => duree_film; set => duree_film = value; }
+        public string Resume_film
+        {
+            get => resume_film;
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("ERREUR: Le resume n'est pas valide");
+                }
+                else
+                {
+                    resume_film = value;
+                }
+            }
+        }
+        public string Genre_film
+        {
+            get => genre_film;
+            set
+            {
+                if (String.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("ERREUR: Le genre du film n'est pas valide");
+                }
+                else
+                {
+                    genre_film = value;
+                }
+            }
+        }
+        public int Duree_film
+        {
+            get => duree_film;
+            set => duree_film = value;
+        }
         public string Liste_acteur { get => liste_acteur; set => liste_acteur = value; }
         public int Annee_de_sortie { get => annee_de_sortie; set => annee_de_sortie = Convert.ToInt32(Date_sortie_film.Year); }
     }

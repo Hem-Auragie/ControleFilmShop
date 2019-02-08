@@ -22,7 +22,8 @@ namespace FilmConsole
                      "\n\t - [1] AJOUTER UNE PERSONNE" +
                      "\n\t - [2] AJOUTER UN FILM" +
                      "\n\t - [3] VOIR TOUS LES FILMS" +
-                     "\n\t - [4] VOIR TOUTE LES PERSONNES");
+                     "\n\t - [4] VOIR TOUTE LES PERSONNES" +
+                     "\n\t - [5] VOIR UN FILM EN FONCTION DE SON ID");
 
             switch (Console.ReadKey(true).Key)
             {
@@ -49,6 +50,12 @@ namespace FilmConsole
                     Console.ReadKey();
                     Console.Clear();
                     break;
+                case ConsoleKey.NumPad5:
+                    Console.Clear();
+                    ShowfilmByID();
+                    Console.ReadKey();
+                    Console.Clear();
+                    break;
             }
         }
         #endregion
@@ -66,7 +73,7 @@ namespace FilmConsole
                 try
                 {
                     Console.Write("Nom: ");
-                    x.Nom= Console.ReadLine();
+                    x.Nom = Console.ReadLine();
                     veriftest = true;
                 }
                 catch (Exception)
@@ -86,7 +93,7 @@ namespace FilmConsole
                     x.Prenom = Console.ReadLine();
                     veriftest = true;
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     Console.WriteLine("Prénom invalide !");
                 }
@@ -104,7 +111,7 @@ namespace FilmConsole
                     x.DateNaissance = Convert.ToDateTime(date);
                     veriftest = true;
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     Console.WriteLine("Date de naissance invalide !");
                 }
@@ -169,7 +176,7 @@ namespace FilmConsole
                 try
                 {
                     Console.Write("Taille: ");
-                    x.Taille= Convert.ToInt32(Console.ReadLine());
+                    x.Taille = Convert.ToInt32(Console.ReadLine());
                     veriftest = true;
                 }
                 catch (Exception)
@@ -323,7 +330,7 @@ namespace FilmConsole
         static void Showfilm()
         {
             List<Films> films = DataAccess.GetAllFilms();
-            foreach(Films film in films)
+            foreach (Films film in films)
             {
                 Console.WriteLine("\nTitre: " + film.Titre_film + " | Réalisateur: " + film.Realisateur_film + " | Date sortie film: " + film.Date_sortie_film + " | Resumé: " + film.Resume_film + " | Genre: " + film.Genre_film + " | Durée film: " + film.Duree_film);
             }
@@ -336,9 +343,20 @@ namespace FilmConsole
             List<Personnes> personne = DataAccess.GetAllPersonnes();
             foreach (Personnes x in personne)
             {
-                Console.WriteLine("\nNom: " + x.Nom + " | Prénom: " + x.Prenom + " | Date de naissance : " + x.DateNaissance + " | Adresse: " + x.Adresse + " | Ville: " + x.Ville + " | Code postal: " + x.CodePostal + " | Taille: " + x.Taille + " | Poids: "+ x.Poids);
+                Console.WriteLine("\nNom: " + x.Nom + " | Prénom: " + x.Prenom + " | Date de naissance : " + x.DateNaissance + " | Adresse: " + x.Adresse + " | Ville: " + x.Ville + " | Code postal: " + x.CodePostal + " | Taille: " + x.Taille + " | Poids: " + x.Poids);
             }
         }
         #endregion
+
+        #region [Interface] Voir un film en fonction d'une ID 
+        static void ShowfilmByID()
+        {
+            Console.WriteLine("Entrez l'ID du film que vous voulez afficher:\n");
+            int ID = Convert.ToInt32(Console.ReadLine());
+            DataAccess.GetFilmById(ID);
+        }
+        #endregion
+
+
     }
 }
